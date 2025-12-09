@@ -5,15 +5,15 @@
 
     /* Общие отступы по макету */
     --page-padding-inline: clamp(16px, 4vw, 48px);
-    --page-padding-block: clamp(20px, 6vw, 100px);
+    --page-padding-block: clamp(20px, 5.25vw, 100px);
+    --margin-padding-block: 100px;
 
     --content-width: clamp(
-            320px,
+            375px,
             100vw - 2 * var(--page-padding-inline),
             700px
     );
 
-    /* Шрифты */
     --font-main: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
     --font-accent: "PressStart2P", system-ui, sans-serif;
@@ -23,17 +23,15 @@
     --font-weight-title: 700;
 
     /* Цвета */
-    --color-bg-base: #1a1a1a;
+    --color-bg-base: #FFFFFF;
     --color-text-base: #000000;
     --color-text-on-dark: #ffffff;
-    --color-accent: #ff0070;
     --color-border: #000000;
 
     /* Кнопки */
-    --button-text-color: #050505;
+    --button-text-color: #ffffff;
     --button-bg-color: #ffffff;
     --button-overlay-color: #000000;
-    --button-shadow-color: var(--color-accent);
 
     /* Карточки */
     --card-border-radius: 20px;
@@ -41,10 +39,10 @@
     --card-title-padding-block: 10px;
     --card-padding-inline: 25px;
     --card-padding-block: 25px;
-    --card-gap: 20px;
+    --card-gap: 50px;
 
     /* Цвет обводки текста лейбла */
-    --label-text-stroke-color: #000000;
+    --label-text-stroke-color: #ffffff;
 
     /* Цвета для анимации сердца */
     --contour-color: #000000;
@@ -72,11 +70,4 @@
                     #e7e7e7 0.01%,
                     #1a1a1a 100%
             );
-}
-
-@media (width <= 375px) {
-    :root {
-        --page-padding-inline: 16px;
-        --content-width: 100%;
-    }
 }
