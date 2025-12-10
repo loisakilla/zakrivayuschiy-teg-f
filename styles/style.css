@@ -10,19 +10,9 @@
     background-color: var(--color-bg-base);
     background-image: var(--page-background-image);
     background-attachment: fixed;
-    background-size:
-            100% 100vh,
-            100% 100vh,
-            100% 100vh;
-    background-repeat:
-            no-repeat,
-            no-repeat,
-            no-repeat;
-    background-position:
-            top left,
-            top left,
-            top left;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,16 +55,9 @@
 .header__title {
     margin: 0;
     font-family: var(--font-accent);
-    font-size: clamp(32px, 4vw, 40px);
-    line-height: 1.2;
+    font-size: 65px;
+    line-height: 1;
     text-transform: uppercase;
-}
-
-.header__description {
-    margin: 0;
-    max-inline-size: 52ch;
-    font-size: 16px;
-    line-height: 1.5;
 }
 
 .cards {
@@ -127,7 +110,7 @@
     font-size: 14px;
     text-transform: uppercase;
     color: var(--color-text-base);
-    opacity: 0.3;
+    opacity: 0.5;
     mix-blend-mode: hard-light;
 }
 
@@ -166,8 +149,9 @@
 .card__text {
     margin: 0;
     font-size: 18px;
-    line-height: 1.5;
-    font-weight: 410;
+    line-height: 21px;
+    font-weight: var(--font-weight-text);
+    font-variation-settings: "wght" var(--font-weight-text);
 }
 
 
@@ -219,9 +203,6 @@
     cursor: pointer;
 }
 
-.button__text {
-    position: relative;
-}
 
 .button__icon {
     display: block;
@@ -243,7 +224,6 @@
 .content__save-button {
     inline-size: 100%;
     max-inline-size: 340px;
-    font-size: 14px;
     text-transform: none;
     height: 55px;
 }
@@ -304,9 +284,7 @@
 }
 
 .button:hover,
-.card__icon-button:hover,
-.card__like-button:hover,
-.dialog__button:hover {
+.card__icon-button:hover {
     cursor: url("../images/cursor.png") 16 16, pointer;
 }
 
@@ -314,7 +292,7 @@
 @media (width <= 376px) {
     :root {
         margin-inline: 0;
-        --content-width: 100%;
+        width: var(--mobile-content-width);
     }
 
     .header__title {
@@ -362,30 +340,30 @@
     }
 }
 
-.card__image_stage_1 {
+.card__image_stage_sepia {
     filter: sepia(0.6) contrast(1.4);
 }
 
-.card__image_stage_2 {
+.card__image_stage_brightness {
     filter: brightness(1.4) saturate(1.6);
 }
 
-.card__image_stage_3 {
+.card__image_stage_hue {
     filter: hue-rotate(40deg) saturate(1.6);
 }
 
-.card__image_stage_4 {
+.card__image_stage_invert {
     filter: invert(1.1) brightness(0.8) saturate(0.6);
 }
 
-.card__image_stage_5 {
+.card__image_stage_sepia_grayscale {
     filter: grayscale(0.8) sepia(0.8) contrast(1.25) brightness(1.05);
 }
 
-.card__image_stage_6 {
+.card__image_stage_blur {
     filter: blur(16px);
 }
 
-.card__image_stage_7 {
+.card__image_stage_hue_brightness_sepia {
     filter: hue-rotate(40deg) brightness(1.05) sepia(0.1);
 }
