@@ -40,13 +40,11 @@
   </div>
 </header>
 
-<!-- ОСНОВНОЙ КОНТЕНТ -->
 <main class="page__section">
   <section
     class="cards"
     aria-label="Карточки с воспоминаниями о спринтах"
   >
-    <!-- 1. Фритрек и нулевой спринт -->
     <article class="card">
       <h2 class="card__title">
         Фритрек и нулевой спринт: Подготовка к работе
@@ -58,7 +56,7 @@
         <picture class="card__picture">
           <img
             class="card__image"
-            src="./images/image (7).png"
+            src="images/car.png"
             alt="Иллюстрация к фритреку и нулевому спринту"
             loading="lazy"
           />
@@ -75,22 +73,41 @@
       </div>
 
       <div class="card__actions">
-        <button
-          class="card__icon-button"
-          type="button"
-          aria-label="Отметить карточку как понравившуюся"
-        >
-          <svg
-            class="like-icon"
-            width="38"
-            height="38"
-            aria-hidden="true"
+          <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Отметить карточку как понравившуюся"
           >
-            <use href="./svg/heart in paths.svg.svg#heart-icon"></use>
-          </svg>
-        </button>
+              <svg class="like-icon" viewBox="0 0 38 38" aria-hidden="true">
+                  <g class="heart">
 
-        <button
+                      <path
+                              class="contour"
+                              d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                              fill="var(--contour-color)"
+                      />
+                      <path
+                              class="main-body"
+                              d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                              fill="transparent"
+                      />
+                      <path
+                              class="core"
+                              d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                              fill="transparent"
+                      />
+                  </g>
+
+                  <path
+                          class="sparks"
+                          d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                          fill="var(--animation-fill-color)"
+                  />
+              </svg>
+          </button>
+
+
+          <button
           class="card__like-button button"
           type="button"
         >
@@ -99,7 +116,6 @@
       </div>
     </article>
 
-    <!-- 2. 1 спринт: Я — чистый лист -->
     <article class="card">
       <h2 class="card__title">1 спринт: Я — чистый лист</h2>
 
@@ -108,8 +124,8 @@
 
         <picture class="card__picture">
           <img
-            class="card__image card__image_stage_1"
-            src="./images/image (6).png"
+            class="card__image card__image_stage_sepia"
+            src="images/car.png"
             alt="Иллюстрация к первому спринту — чистый лист"
             loading="lazy"
           />
@@ -126,22 +142,41 @@
       </div>
 
       <div class="card__actions">
-        <button
-          class="card__icon-button"
-          type="button"
-          aria-label="Отметить карточку как понравившуюся"
-        >
-          <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            aria-hidden="true"
+          <button
+                  class="card__icon-button"
+                  type="button"
+                  aria-label="Отметить карточку как понравившуюся"
           >
-            <use href="./svg/heart.svg#heart-icon"></use>
-          </svg>
-        </button>
+              <svg class="like-icon" viewBox="0 0 38 38" aria-hidden="true">
+                  <g class="heart">
 
-        <button
+                      <path
+                              class="contour"
+                              d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                              fill="var(--contour-color)"
+                      />
+                      <path
+                              class="main-body"
+                              d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                              fill="transparent"
+                      />
+                      <path
+                              class="core"
+                              d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                              fill="transparent"
+                      />
+                  </g>
+
+                  <path
+                          class="sparks"
+                          d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                          fill="var(--animation-fill-color)"
+                  />
+              </svg>
+          </button>
+
+
+          <button
           class="card__like-button button"
           type="button"
         >
@@ -150,7 +185,6 @@
       </div>
     </article>
 
-    <!-- 3. 1 спринт: А если не получится? -->
     <article class="card">
       <h2 class="card__title">1 спринт: А если не получится?</h2>
 
@@ -159,8 +193,8 @@
 
         <picture class="card__picture">
           <img
-            class="card__image card__image_stage_2"
-            src="./images/image (5).png"
+            class="card__image card__image_stage_brightness"
+            src="images/car.png"
             alt="Иллюстрация к карточке про страх не справиться"
             loading="lazy"
           />
@@ -182,14 +216,32 @@
           type="button"
           aria-label="Отметить карточку как понравившуюся"
         >
-          <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            aria-hidden="true"
-          >
-            <use href="./svg/heart.svg#heart-icon"></use>
-          </svg>
+            <svg class="like-icon" viewBox="0 0 38 38" aria-hidden="true">
+                <g class="heart">
+
+                    <path
+                            class="contour"
+                            d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                            fill="var(--contour-color)"
+                    />
+                    <path
+                            class="main-body"
+                            d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                            fill="transparent"
+                    />
+                    <path
+                            class="core"
+                            d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                            fill="transparent"
+                    />
+                </g>
+
+                <path
+                        class="sparks"
+                        d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                        fill="var(--animation-fill-color)"
+                />
+            </svg>
         </button>
 
         <button
@@ -209,8 +261,8 @@
 
         <picture class="card__picture">
           <img
-            class="card__image card__image_stage_3"
-            src="./images/image (4).png"
+            class="card__image card__image_stage_hue"
+            src="images/car.png"
             alt="Иллюстрация к карточке про погоню за идеалом"
             loading="lazy"
           />
@@ -232,14 +284,32 @@
           type="button"
           aria-label="Отметить карточку как понравившуюся"
         >
-          <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            aria-hidden="true"
-          >
-            <use href="./svg/heart.svg#heart-icon"></use>
-          </svg>
+            <svg class="like-icon" viewBox="0 0 38 38" aria-hidden="true">
+                <g class="heart">
+
+                    <path
+                            class="contour"
+                            d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                            fill="var(--contour-color)"
+                    />
+                    <path
+                            class="main-body"
+                            d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                            fill="transparent"
+                    />
+                    <path
+                            class="core"
+                            d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                            fill="transparent"
+                    />
+                </g>
+
+                <path
+                        class="sparks"
+                        d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                        fill="var(--animation-fill-color)"
+                />
+            </svg>
         </button>
 
         <button
@@ -251,7 +321,6 @@
       </div>
     </article>
 
-    <!-- 5. 2 спринт: О тех, кто рядом -->
     <article class="card">
       <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
 
@@ -260,8 +329,8 @@
 
         <picture class="card__picture">
           <img
-            class="card__image card__image_stage_4"
-            src="./images/image (3).png"
+            class="card__image card__image_stage_invert"
+            src="images/car.png"
             alt="Иллюстрация к карточке про поддержку"
             loading="lazy"
           />
@@ -283,14 +352,32 @@
           type="button"
           aria-label="Отметить карточку как понравившуюся"
         >
-          <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            aria-hidden="true"
-          >
-            <use href="./svg/heart.svg#heart-icon"></use>
-          </svg>
+            <svg class="like-icon" viewBox="0 0 38 38" aria-hidden="true">
+                <g class="heart">
+
+                    <path
+                            class="contour"
+                            d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                            fill="var(--contour-color)"
+                    />
+                    <path
+                            class="main-body"
+                            d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                            fill="transparent"
+                    />
+                    <path
+                            class="core"
+                            d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                            fill="transparent"
+                    />
+                </g>
+
+                <path
+                        class="sparks"
+                        d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                        fill="var(--animation-fill-color)"
+                />
+            </svg>
         </button>
 
         <button
@@ -310,8 +397,8 @@
 
         <picture class="card__picture">
           <img
-            class="card__image card__image_stage_5"
-            src="./images/image (2).png"
+            class="card__image card__image_stage_sepia_grayscale"
+            src="images/car.png"
             alt="Иллюстрация к карточке про поиск решений"
             loading="lazy"
           />
@@ -333,14 +420,32 @@
           type="button"
           aria-label="Отметить карточку как понравившуюся"
         >
-          <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            aria-hidden="true"
-          >
-            <use href="./svg/heart.svg#heart-icon"></use>
-          </svg>
+            <svg class="like-icon" viewBox="0 0 38 38" aria-hidden="true">
+                <g class="heart">
+
+                    <path
+                            class="contour"
+                            d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                            fill="var(--contour-color)"
+                    />
+                    <path
+                            class="main-body"
+                            d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                            fill="transparent"
+                    />
+                    <path
+                            class="core"
+                            d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                            fill="transparent"
+                    />
+                </g>
+
+                <path
+                        class="sparks"
+                        d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                        fill="var(--animation-fill-color)"
+                />
+            </svg>
         </button>
 
         <button
@@ -362,8 +467,8 @@
 
         <picture class="card__picture">
           <img
-            class="card__image card__image_stage_6"
-            src="./images/image (1).png"
+            class="card__image card__image_stage_blur"
+            src="images/car.png"
             alt="Иллюстрация к карточке про усталость и выгорание"
             loading="lazy"
           />
@@ -385,14 +490,32 @@
           type="button"
           aria-label="Отметить карточку как понравившуюся"
         >
-          <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            aria-hidden="true"
-          >
-            <use href="./svg/heart.svg#heart-icon"></use>
-          </svg>
+            <svg class="like-icon" viewBox="0 0 38 38" aria-hidden="true">
+                <g class="heart">
+
+                    <path
+                            class="contour"
+                            d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                            fill="var(--contour-color)"
+                    />
+                    <path
+                            class="main-body"
+                            d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                            fill="transparent"
+                    />
+                    <path
+                            class="core"
+                            d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                            fill="transparent"
+                    />
+                </g>
+
+                <path
+                        class="sparks"
+                        d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                        fill="var(--animation-fill-color)"
+                />
+            </svg>
         </button>
 
         <button
@@ -412,8 +535,8 @@
 
         <picture class="card__picture">
           <img
-            class="card__image card__image_stage_7"
-            src="./images/image.png"
+            class="card__image card__image_stage_hue_brightness_sepia"
+            src="images/car.png"
             alt="Иллюстрация к карточке про текущее состояние"
             loading="lazy"
           />
@@ -435,14 +558,32 @@
           type="button"
           aria-label="Отметить карточку как понравившуюся"
         >
-          <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            aria-hidden="true"
-          >
-            <use href="./svg/heart.svg#heart-icon"></use>
-          </svg>
+            <svg class="like-icon" viewBox="0 0 38 38" aria-hidden="true">
+                <g class="heart">
+
+                    <path
+                            class="contour"
+                            d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                            fill="var(--contour-color)"
+                    />
+                    <path
+                            class="main-body"
+                            d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                            fill="transparent"
+                    />
+                    <path
+                            class="core"
+                            d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                            fill="transparent"
+                    />
+                </g>
+
+                <path
+                        class="sparks"
+                        d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                        fill="var(--animation-fill-color)"
+                />
+            </svg>
         </button>
 
         <button
@@ -476,7 +617,6 @@
   </section>
 </main>
 
-<!-- МОДАЛЬНОЕ ОКНО -->
 <dialog
   class="dialog"
   id="save-dialog"
@@ -499,10 +639,6 @@
       >
         Вставьте дискету, чтобы продолжить
       </h2>
-      <p class="dialog__description">
-        Здесь может быть любой вспомогательный текст — можно
-        оставить как в макете или написать свой.
-      </p>
     </div>
   </div>
 
