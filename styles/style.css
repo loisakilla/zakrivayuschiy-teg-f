@@ -139,10 +139,10 @@
 
 .card__content {
     padding-inline: var(--card-padding-inline);
-    padding-block: 20px;
+    padding-block: 25px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 25px; /*по макету здесь 25px, а не 7*/
     border-top: 2px solid var(--color-border);
 }
 
@@ -150,7 +150,6 @@
     margin: 0;
     font-size: 18px;
     line-height: 21px;
-    font-weight: var(--font-weight-text);
     font-variation-settings: "wght" var(--font-weight-text);
 }
 
@@ -295,6 +294,10 @@
         width: var(--mobile-content-width);
     }
 
+    .header {
+        min-height: 327px;
+    }
+
     .header__title {
         font-size: 49px;
     }
@@ -303,8 +306,8 @@
     }
 
     .card__label {
-        top: 16px;
-        right: 16px;
+        top: 25px;
+        right: 25px;
     }
 
     .content__save-button {
